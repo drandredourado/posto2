@@ -99,25 +99,25 @@
 
       // Defina seus códigos de acesso e as URLs das páginas correspondentes
       var accessCodes = {
-        "1510": "https://example.com/pagina-restrita-1",
-        "1901": "https://example.com/pagina-restrita-2",
-        "2701": "https://example.com/pagina-restrita-3",
-        "3001": "https://example.com/pagina-restrita-4",
-        "0102": "https://example.com/pagina-restrita-5",
-        "0602": "https://example.com/pagina-restrita-6",
-        "0203": "https://example.com/pagina-restrita-7",
-        "0404": "https://example.com/pagina-restrita-8",
-        "2205": "https://example.com/pagina-restrita-9",
-        "0207": "https://example.com/pagina-restrita-10",
-        "0307": "https://example.com/pagina-restrita-11",
-        "1307": "https://example.com/pagina-restrita-12",
-        "0308": "https://example.com/pagina-restrita-13",
-        "0611": "https://example.com/pagina-restrita-14",
-        "2212": "https://example.com/pagina-restrita-15"
+        "1510": "pagina-restrita-1.html",
+        "1901": "pagina-restrita-2.html",
+        "2701": "pagina-restrita-3.html",
+        "3001": "pagina-restrita-4.html",
+        "0102": "pagina-restrita-5.html",
+        "0602": "pagina-restrita-6.html",
+        "0203": "pagina-restrita-7.html",
+        "0404": "pagina-restrita-8.html",
+        "2205": "pagina-restrita-9.html",
+        "0207": "pagina-restrita-10.html",
+        "0307": "pagina-restrita-11.html",
+        "1307": "pagina-restrita-12.html",
+        "0308": "pagina-restrita-13.html",
+        "0611": "pagina-restrita-14.html",
+        "2212": "pagina-restrita-15.html"
       };
 
       if (accessCode in accessCodes) {
-        window.open(accessCodes[accessCode], '_blank');
+        window.location.href = accessCodes[accessCode];
       } else {
         document.getElementById("errorContainer").style.display = "block";
       }
